@@ -19,7 +19,6 @@ jobs:
         python-version: [3.13]
     
     runs-on: ${{matrix.os}}
-    
     steps:
       - name: Checkout repository
       uses: actions/checkout@v4
