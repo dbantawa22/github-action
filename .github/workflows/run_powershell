@@ -1,0 +1,22 @@
+name: Run PowerShell Script
+
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  powershell_job:
+    runs-on: 'windows-latest'
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+    
+      - name: Run inline powershell
+        run: |
+          write-host "Hello from Powershell"
+          Get-Date
+      
+      # - name: Run PowerShell script from file
+      #   run: ./.github/scripts/myscript.ps1
+      #   shell: powershell
