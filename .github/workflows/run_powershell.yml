@@ -17,9 +17,9 @@ jobs:
     
       - name: Run inline powershell
         run: |
-          write-host "Hello from Powershell"
+          write-host "Hello from Powershell inline"
           Get-Date
       
-      # - name: Run PowerShell script from file
-      #   run: ./.github/scripts/myscript.ps1
-      #   shell: powershell
+      - name: Run PowerShell script from file
+        run: ./.github/scripts/myscript.ps1
+        shell: powershell
