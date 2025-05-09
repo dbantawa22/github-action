@@ -4,6 +4,9 @@ on:
   push:
     branches: 
       - main
+    paths:
+      - '.github/workflows/run_powershell.yml'
+    
 
 jobs:
   powershell_job:
