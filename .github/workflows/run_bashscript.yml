@@ -1,0 +1,25 @@
+name: Run Bash Script
+
+on:
+  push:
+    branches: 
+      - main
+    paths:
+      - '.github/workflows/run_bashscript.yml'
+    
+
+jobs:
+  powershell_job:
+    runs-on: 'ubuntu-latest'
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+    
+      - name: Run inline bashshell
+        run: |
+          echo "Hello from bash inline"
+          date
+      
+      - name: Run Bash Shell script from file
+        run: bash ./.github/scripts/shellscript.sh
+        
