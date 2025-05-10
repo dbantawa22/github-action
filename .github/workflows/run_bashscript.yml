@@ -9,7 +9,7 @@ on:
     
 
 jobs:
-  powershell_job:
+  bashshell_job:
     runs-on: 'ubuntu-latest'
     steps:
       - name: checkout code
