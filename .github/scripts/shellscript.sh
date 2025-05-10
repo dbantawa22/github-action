@@ -3,3 +3,4 @@
 # This script prints "Hello, world!"
 echo "Hello, World!"
 ls -l
+hostname
