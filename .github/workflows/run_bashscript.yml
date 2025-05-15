@@ -6,7 +6,9 @@ on:
       - main
     paths:
       - '.github/workflows/run_bashscript.yml'
-    
+
+permissions:
+  contents: read
 
 jobs:
   bashshell_job:
